@@ -1,14 +1,14 @@
-#Spring Core
+# Spring Core
 
-##In applicationContext.xml file which contains we have to specify the property of a bean.
+## In applicationContext.xml file which contains we have to specify the property of a bean.
 
-##Building the project
+## Building the project
 
 ```
     mvn clean compile install
 ```
 
-##Running the main file
+## Running the main file
 
 ```
     mvn exec:java -Dexec.mainClass="com.demos.anwesh.App"
