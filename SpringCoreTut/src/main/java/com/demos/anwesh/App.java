@@ -4,10 +4,15 @@ package com.demos.anwesh;
  * Hello world!
  *
  */
-public class App 
+import org.springframework.context.*;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        CourtRoom courtRoom = (CourtRoom)context.getBean("courtRoom");
+        courtRoom.decide();
+        courtRoom.maintainOrder();
     }
 }
